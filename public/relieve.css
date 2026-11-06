@@ -8,3 +8,6 @@ a.client-action-button{display:flex;align-items:center;justify-content:center;te
 .main-analytics .values{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;justify-content:normal;text-align:center}
 .main-analytics .values span{min-width:0;white-space:normal;overflow-wrap:anywhere}
 .owner-info{white-space:pre-line}
+
+/* Give the main-page model captions a little more breathing room. */
+.panel-home .home-lumi-label{margin-top:16px}

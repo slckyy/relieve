@@ -1,0 +1,36 @@
+{
+  "verifiedAt": "2026-11-06T14:24:39.968Z",
+  "origin": "https://relieve-slckyy.pages.dev",
+  "results": [
+    {
+      "path": "index.html",
+      "sha256": "5b5312a63306e985292161b77debee73ca3c6d4d1935636828016bb0c631c000",
+      "result": "MATCH"
+    },
+    {
+      "path": "app.js",
+      "sha256": "2e1756fdeec212582bd7a7f36c11204c5154667bde5f36ce30cc86e4fc24d888",
+      "result": "MATCH"
+    },
+    {
+      "path": "relieve.css",
+      "sha256": "bc2899d90ad2626513ee1468c5f12a8c9af7397da1c5cd050229043871c01700",
+      "result": "MATCH"
+    },
+    {
+      "path": "quote/index.html",
+      "sha256": "741747e42e60a1e61af3ad159e8ed5a21a7ad7904b63a627557fa79ae2ea5603",
+      "result": "MATCH"
+    },
+    {
+      "path": "quote/quote.js",
+      "sha256": "2e02caf9a4eeb671248117f2964463e95cebeeee10c97e575c9788bca14d2035",
+      "result": "MATCH"
+    },
+    {
+      "path": "quote/settings.js",
+      "sha256": "9d1948305b1a67593b6f075ceba5e754b3d9579e482c90c44870fdccda7c54cc",
+      "result": "MATCH"
+    }
+  ]
+}

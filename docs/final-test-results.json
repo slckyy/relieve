@@ -1,0 +1,17 @@
+{
+  "runAt": "2026-11-06T14:23:33.794Z",
+  "results": [
+    {
+      "name": "Historical appointment correction updates the existing event without reactivating it",
+      "result": "PASS"
+    },
+    {
+      "name": "Explicit synthetic Sent state persists with unverified-delivery wording; corrected back to Skipped without sending SMS",
+      "result": "PASS"
+    },
+    {
+      "name": "Actual hosted public-intake burst reaches the database rate limit and is rejected",
+      "result": "PASS"
+    }
+  ]
+}

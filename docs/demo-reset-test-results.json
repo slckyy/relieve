@@ -1,0 +1,6 @@
+{
+  "runAt": "2026-11-06T14:24:13.701Z",
+  "result": "PASS",
+  "scope": "Owner demo archive clears current queues, preserves notes and other tenant, restores browser walkthrough to Done",
+  "retainedWalkthroughs": 1
+}

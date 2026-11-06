@@ -17,6 +17,23 @@ export function preloadLumi(asset) {
 }
 export async function loadLumi(asset) {
   const data = await preloadLumi(asset);
-  return new GLTFLoader().parseAsync(data, new URL('./', new URL(asset, import.meta.url)).href);
+  const gltf = await new GLTFLoader().parseAsync(data, new URL('./', new URL(asset, import.meta.url)).href);
+  // Asset-local poses are shared by Home and the interactive page viewers.
+  if (/cell\.glb(?:[?#]|$)/.test(asset)) {
+    gltf.scene.rotation.set(-.12, -.30, -.20, 'ZYX');
+    gltf.scene.traverse(object => {
+      for (const material of [].concat(object.material || [])) {
+        if (material.name !== 'COLOUR_Black_Screen') continue;
+        material.color.set(0x000000);
+        material.emissive.set(0x000000);
+        material.emissiveIntensity = 0;
+        material.envMapIntensity = 0;
+        material.roughness = .85;
+      }
+    });
+  } else if (/hammer\.glb(?:[?#]|$)/.test(asset)) {
+    gltf.scene.rotation.set(1.10, .20, -1.15, 'ZYX');
+  }
+  return gltf;
 }
 export function releaseLumiDownloads() { buffers.clear(); }

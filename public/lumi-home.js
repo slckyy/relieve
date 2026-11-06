@@ -15,13 +15,8 @@ export function mountLumiHome(panel, items, onSelect, { paused = false, onPrepar
     events: { badge: '#78D9B5', phase: 4.2, spin: -.17, yaw: .28, rhythm: 3 }
   };
   let selected = 0, position = 0, target = 0, pointer = null, wheelAt = 0;
-  let backgroundPosition = NaN;
-  function syncBackground() {
-    if (backgroundPosition === position) return;
-    backgroundTrack.style.transform = `translate3d(${-position * 100}%, 0, 0)`;
-    backgroundPosition = position;
-  }
-  syncBackground();
+  // Keep the backdrop stationary while the models move.
+  backgroundTrack.style.transform = 'none';
   let frame = 0, last = 0, elapsed = 0, disposed = false, renderReady = false, width = 1, height = 1;
   const entries = items.map((item, i) => {
     const appearance = { badge:item.accent, phase:i * 1.1, spin:.14, yaw:0, rhythm:i };
@@ -44,7 +39,6 @@ export function mountLumiHome(panel, items, onSelect, { paused = false, onPrepar
   function select(index, instant = false) {
     selected = Math.round(clamp(index)); target = selected;
     if (instant || motion.matches) position = target;
-    syncBackground();
     announce(); wake();
   }
   announce();
@@ -172,8 +166,7 @@ export function mountLumiHome(panel, items, onSelect, { paused = false, onPrepar
     const dt = last ? Math.min((ms - last) / 1000, .1) : 1 / 60; last = ms; elapsed += dt;
     if (!pointer) position += (target - position) * (motion.matches ? 1 : 1 - Math.exp(-dt * 13));
     if (Math.abs(target - position) < .0001) position = target;
-    // Use the same fractional position as the LUMIs, including drag and settling.
-    syncBackground();
+    // Render the models at their fractional drag/settling positions.
     renderer.setRenderTarget(null); renderer.clear();
     const ordered = [...entries].sort((a, b) => Math.abs(b.i - position) - Math.abs(a.i - position));
     for (const e of ordered) {

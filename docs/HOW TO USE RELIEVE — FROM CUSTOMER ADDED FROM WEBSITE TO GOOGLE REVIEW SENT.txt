@@ -1,0 +1,63 @@
+HOW TO USE RELIEVE — FROM CUSTOMER ADDED FROM WEBSITE TO GOOGLE REVIEW SENT
+
+YOUR LINKS
+Website: https://relieve-slckyy.pages.dev/quote/
+App: https://relieve-slckyy.pages.dev/
+Private owner/worker sign-in: C:\Users\griffey\Documents\relieve-private\DEMO SIGN IN.txt
+Use the owner login yourself. Use the worker account in a separate browser to demonstrate staff access. Do not show passwords on a sales call.
+
+BEFORE A MEETING
+Open the app once and make sure it loads. Free Supabase projects can pause after low activity; if paused, restore the project in Supabase before your meeting.
+This is the fictional Automan Automotives demo. Use a fictional name and a reserved number such as (417) 555-0110. Do not enter real customer data here.
+Main lets you swipe/select CELL, WATCH, BUILD, STAR and TASK, then tap OPEN. RETURN takes you back to Main. LOST and DONE sit at the top. Account and Activity sit below the selector.
+
+THE 10–15 MINUTE DEMO
+1. Open the website. Enter a fictional Customer name, Customer phone number and Customer work request. Tap SEND QUOTE REQUEST. Wait for “Request received.”
+   Say: “A website request goes straight into the team's private workspace.”
+
+2. Open relieve and choose CELL / OPEN ACQUISITION. The request appears automatically (the open app checks for changes about every ten seconds). Reopening a page also loads current records. If needed, refresh.
+   Tap the customer's name. Customer details show the work request, original date, received time and website source. Add a note under Notes for this job and tap SAVE NOTES.
+   Say: “This information stays attached to this specific job, even when this customer comes back for another job.”
+
+3. Close Details. Tap Call to show the saved number and prepared phone action. Copy it if the device cannot call. Do not actually call the demo number. The app never claims a call happened.
+
+4. Tap Schedule quoting →. Choose In person, By phone or Remote. In person requires an address. Add quote details; set a date/time only if there is a real appointment. Tap SCHEDULE QUOTING.
+   Say: “An appointment appears in Events automatically. A remote quote can move ahead without inventing an appointment.”
+
+5. RETURN to Main, select WATCH, OPEN QUOTING. Tap the customer's name, Quoting, then Edit. Enter an estimate and choose Quote given — awaiting decision. Save.
+   Say: “An estimate can wait here for a decision. It is not counted as scheduled work.”
+   When demonstrating acceptance, tap Schedule work →. Enter the agreed amount, work details and date, with time if known. Explicitly check Customer approved this quote, then SCHEDULE WORK. Never check that for a real customer without approval.
+
+6. RETURN, select BUILD, OPEN WORK. Details > Work > Edit lets you change the job date. Save it once to demonstrate rescheduling. TASK / OPEN EVENTS shows the same linked Work event with the new date. Its Details button can open the linked customer. There is no duplicate appointment.
+   Say: “The job and calendar stay together, whoever makes the change.”
+
+7. In Work, tap Mark work complete →. Confirm the finalized job value, exact work done, and the date actually finished. Confirm completion, then MARK COMPLETE. For rehearsal, describe the work as fictional. The saved completion date is separate from the scheduled date.
+
+8. RETURN, select STAR, OPEN REVIEW. Tap Send review request to preview the prepared text. It includes the customer name, Automan Automotives and google.com, with the required paragraph spacing. COPY DRAFT works on the PC. OPEN TEXT DRAFT opens the normal phone texting app when supported; it does not send or mark the request sent.
+   IMPORTANT: google.com is a demonstration placeholder, NOT a verified review link. Do not send this demo message to a real person. No text should be sent during the demo.
+   Say: “The staff member controls the text. relieve never sends customer messages automatically.”
+
+9. Return to relieve. Tap Mark review sent →. For the demo, choose SKIP REVIEW REQUEST and enter “Demonstration — no text sent,” then save. For real work only, enter the date actually sent and explicitly confirm it before MARK REVIEW SENT.
+
+10. RETURN to Main, tap DONE. The completed job and final value are there. Its Customer, Quoting, Work, Review and History tabs preserve the journey; its note stays attached. Main analytics use real stage counts and quote/job values, not payments, profit or verified revenue.
+    Say: “One request, one complete history, and everyone sees the same progress.”
+
+HELPFUL SIDE DEMOS
+- Manual entry: Acquisition + asks the same three customer fields. A returning number prompts you to choose the existing customer or confirm a different person sharing a number. Every request still becomes a separate job.
+- Lost: SEND TO LOST from Acquisition, Quoting or Work asks for a reason. Main > LOST > Recover customer restores the exact previous stage. Canceled appointments remain canceled until explicitly rescheduled/reactivated. Earlier details and notes remain available. Lost details > Edit corrects the latest reason.
+- Events: TASK has linked quoting, work and follow-up appointments plus manual events added with +. Editing a linked appointment updates the job. Cancel it instead of deleting its history. The arrow opens Past Events. A date-only event remains upcoming through that whole business day.
+- Details: Each reached stage has its own tab. Edit corrects details; History records changes. Notes are only inside a specific job's details, including Lost and Done. Archived notes are read-only until restored.
+- Workers: Account > WORKER ACCESS lets the owner create an invitation and copy a private one-time setup link. Send it only to the intended worker. No invitation email is sent automatically. The owner can generate a worker recovery link or REMOVE access. Workers cannot change business settings or manage staff.
+- Notifications: Activity is saved business history, not a temporary toast. Account > ENABLE DEVICE NOTIFICATIONS asks permission where supported. On iPhone first use Safari > Share > Add to Home Screen, then open that installed app. Physical-device push still needs the final check below.
+
+RESET FOR THE NEXT MEETING
+Export a backup if you want to retain the demo state separately. Account > ARCHIVE DEMO RECORDS > ARCHIVE DEMO safely archives this demonstration business's jobs and cancels active demo events. It does not erase history or touch other businesses. DONE > Archive lets the owner inspect and restore archived jobs. Ordinary completed jobs also have Archive customer →.
+
+BACKUPS AND REAL-BUSINESS SETUP
+Account > EXPORT BUSINESS BACKUP downloads a signed JSON snapshot. Keep it private. RESTORE BACKUP accepts a signed file for the SAME business, replaces matching customer/job/event records, and retains newer records and current audit history. Export a fresh backup before restoring. It does not restore passwords, staff accounts, settings or an entirely deleted Supabase project.
+New businesses, owner accounts and website-to-business bindings are currently set up by an operator. A real business needs its actual name and a verified direct Google review link. Do not describe this as automatic mass onboarding.
+
+FINAL PHONE CHECK (NOT CLAIMED TESTED ON THIS PC)
+Open the links on your iPhone/Android. Install the PWA where supported. Verify model gestures, keyboard/date pickers, the dial preview and text draft without sending. Enable notifications, confirm the test notification arrives, then leave the app and submit a new fictional website request. Confirm a real system notification and the saved request after opening it. Delivery depends on the browser, installed-app requirements, device settings and network.
+
+Free hosting has quotas and no uptime guarantee. No production email service or automatic database disaster backup is configured. Keep the private sign-in file safe; its reserved demo email identities cannot receive recovery emails. An owner who loses access needs the Supabase project administrator. No paid services were enabled.

@@ -1,0 +1,86 @@
+{
+  "runAt": "2026-11-06T14:07:19.825Z",
+  "target": "Supabase live project; disposable fictional demo records only",
+  "tests": [
+    {
+      "name": "Anonymous cannot read customer records or invoke staff commands",
+      "result": "PASS"
+    },
+    {
+      "name": "Required inputs and real phone numbers are rejected for demo",
+      "result": "PASS"
+    },
+    {
+      "name": "Manual add persists and retries return exactly one opportunity",
+      "result": "PASS"
+    },
+    {
+      "name": "Other tenant cannot read, mutate or directly insert into demo records",
+      "result": "PASS"
+    },
+    {
+      "name": "Worker can save job notes; concurrent stale edits fail",
+      "result": "PASS"
+    },
+    {
+      "name": "Returning customer needs confirmation and keeps distinct jobs",
+      "result": "PASS"
+    },
+    {
+      "name": "Remote quoting without a date creates no fake appointment",
+      "result": "PASS"
+    },
+    {
+      "name": "Quote pending decision can be recorded without scheduling work",
+      "result": "PASS"
+    },
+    {
+      "name": "Work requires explicit approval, amount, description and date",
+      "result": "PASS"
+    },
+    {
+      "name": "Approved work advances and creates one linked event",
+      "result": "PASS"
+    },
+    {
+      "name": "Customer and event rescheduling update the same event both directions",
+      "result": "PASS"
+    },
+    {
+      "name": "Lost/recover retains notes, exact previous stage and canceled appointments",
+      "result": "PASS"
+    },
+    {
+      "name": "Repeated Lost episodes are retained and appointments explicitly reactivate",
+      "result": "PASS"
+    },
+    {
+      "name": "Actual completion advances to Review and completes the Work event",
+      "result": "PASS"
+    },
+    {
+      "name": "Review draft is not a send; explicit skip reaches Done",
+      "result": "PASS"
+    },
+    {
+      "name": "Archive/restore preserves notes, customer and completed lifetime values",
+      "result": "PASS"
+    },
+    {
+      "name": "Owner-only settings/export and tenant-safe restore",
+      "result": "PASS"
+    },
+    {
+      "name": "Public intake cannot be invoked anonymously; server intake is idempotent",
+      "result": "PASS"
+    },
+    {
+      "name": "Invalid local dates and DST gaps/ambiguities are rejected",
+      "result": "PASS"
+    },
+    {
+      "name": "Manual events edit, complete, and delete independently",
+      "result": "PASS"
+    }
+  ]
+}

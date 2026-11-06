@@ -1,0 +1,12 @@
+{
+  "name": "relieve-slckyy",
+  "pages_build_output_dir": "dist",
+  "compatibility_date": "2026-11-06",
+  "compatibility_flags": [
+    "nodejs_compat"
+  ],
+  "vars": {
+    "SUPABASE_URL": "https://gzdhcvlhugeziscbtucv.supabase.co",
+    "SUPABASE_PUBLISHABLE_KEY": "sb_publishable_Dbo7O4BGGzrpFy19ftAfSQ_Qq--qA0c"
+  }
+}

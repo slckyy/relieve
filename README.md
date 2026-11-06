@@ -35,4 +35,3 @@ The deployed Cloudflare project is `relieve-slckyy`, production branch `main`, o
 ## Design and ownership
 
 Approved assets come from the user's `for codex` folder. The supplied SANCTION visual/motion modules were reused and adapted in relieve; SANCTION itself was not modified. Three.js attribution is in `THIRD_PARTY_NOTICES.txt` and its vendor header.
-

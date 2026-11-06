@@ -1,0 +1,35 @@
+{
+  "runAt": "2026-11-06T14:06:08.673Z",
+  "target": "https://relieve-slckyy.pages.dev",
+  "walkthroughOpportunity": "dfd11c04-e736-4db1-9cfc-12da95601bdd",
+  "tests": [
+    {
+      "name": "Hosted app, quote site and configured push API respond over HTTPS",
+      "result": "PASS"
+    },
+    {
+      "name": "Public endpoint validates inputs, refuses tenant injection and private reads",
+      "result": "PASS"
+    },
+    {
+      "name": "Real hosted website submission persists once and is visible in a separate worker session",
+      "result": "PASS"
+    },
+    {
+      "name": "Quote appointment edits synchronize one event; cancellation clears the job date",
+      "result": "PASS"
+    },
+    {
+      "name": "Website opportunity advances Quoting → Work → Review → Done with preserved notes",
+      "result": "PASS"
+    },
+    {
+      "name": "Hosted signed backup rejects workers, altered signatures and another tenant; restore succeeds",
+      "result": "PASS"
+    },
+    {
+      "name": "Worker invite/recovery are owner-only; push reports actual subscription result",
+      "result": "PASS"
+    }
+  ]
+}

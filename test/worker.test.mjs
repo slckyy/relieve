@@ -1,0 +1,6 @@
+import test from 'node:test';import assert from 'node:assert/strict';import worker from '../worker/index.js';
+const env={APP_ORIGIN:'https://example.pages.dev'};const ctx={waitUntil(){}};
+test('API refuses cross-origin posts before database access',async()=>{const r=await worker.fetch(new Request('https://example.pages.dev/api/submit',{method:'POST',headers:{Origin:'https://attacker.invalid','Content-Type':'application/json'},body:'{}'}),env,ctx);assert.equal(r.status,403);});
+test('API does not expose writes through GET',async()=>{const r=await worker.fetch(new Request('https://example.pages.dev/api/submit'),env,ctx);assert.equal(r.status,405);});
+test('API rejects form-encoded submissions',async()=>{const r=await worker.fetch(new Request('https://example.pages.dev/api/submit',{method:'POST',body:'name=test'}),env,ctx);assert.equal(r.status,415);});
+test('Push config only exposes public key and disables caching',async()=>{const r=await worker.fetch(new Request('https://example.pages.dev/api/push-config'),{...env,VAPID_PUBLIC_KEY:'public',VAPID_PRIVATE_KEY:'private'},ctx);assert.deepEqual(await r.json(),{publicKey:'public'});assert.equal(r.headers.get('cache-control'),'no-store');});

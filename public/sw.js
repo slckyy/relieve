@@ -1,0 +1,6 @@
+const CACHE='relieve-shell-1';
+self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(['/','/styles.css','/relieve.css','/motion.js','/app.js','/config.js','/icon.svg']))));
+self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k))))));
+self.addEventListener('fetch',e=>{const u=new URL(e.request.url);if(e.request.method!=='GET'||u.origin!==location.origin||u.pathname.startsWith('/api/'))return;e.respondWith(fetch(e.request).then(r=>{if(r.ok){const clone=r.clone();caches.open(CACHE).then(c=>c.put(e.request,clone));}return r;}).catch(()=>caches.match(e.request).then(r=>r||(e.request.mode==='navigate'?caches.match('/'):Response.error()))));});
+self.addEventListener('push',e=>{let data={};try{data=e.data?.json()||{};}catch{}e.waitUntil(self.registration.showNotification('relieve',{body:data.body||'Your business has new activity. Open relieve to view.',icon:'/icon-192.png',tag:'relieve-activity',data:{url:'/'}}));});
+self.addEventListener('notificationclick',e=>{e.notification.close();e.waitUntil(clients.matchAll({type:'window'}).then(async windows=>{const w=windows.find(w=>new URL(w.url).origin===location.origin);if(w){await w.focus();w.postMessage({type:'activity'});}else await clients.openWindow('/');}));});

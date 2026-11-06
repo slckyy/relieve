@@ -1,0 +1,10 @@
+{
+  "runAt": "2026-11-06T14:09:19.989Z",
+  "results": [
+    "Invitation link → verified session → password setup → worker membership PASS",
+    "Existing owner cannot be overwritten by worker invitation PASS",
+    "Removed worker loses direct read and write access immediately PASS",
+    "Date-only event spans whole business day including DST 25-hour day PASS",
+    "Original date and Lost reason corrections persist with audit history PASS"
+  ]
+}
